@@ -51,6 +51,16 @@ Większość elektrowni korzysta że źródeł nieodnawialnych ponieważ można 
 Jest kilka rodzajów elektrowni:
 Wodne(buduje się najczęściej w górach gdzie rzeki mają duży spadek), cieplne, wiatrowe(buduje się na wybrzeżach i dolinach) , słoneczne(buduje się najczęściej w południowej części Europy), geotermalne(buduje się na Islandii i we Włoszech), jądrowe  
 </div>
+<audio autoplay loop muted id="bg-music">
+  <source src="muzyka.mp3.mp3" type="audio/mpeg">
+</audio>
 
+<script>
+  document.addEventListener("click", function() {
+    const music = document.getElementById("bg-music");
+    music.muted = false;
+    music.play();
+  }, { once: true });
+</script>
 </body>
 </html>
